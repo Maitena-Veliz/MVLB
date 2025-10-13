@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/style_inicio.css">
-    <link rel="shortcut icon" href="../static/imagenes/logo.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style_inicio.css') }}"> 
+    <link rel="shortcut icon" href="{{ url_for('static', filename='/img/logo.png') }}">
     <title>MVLB</title>
 </head>
 <body style="background-color: rgba(246, 235, 206, 1);">
@@ -23,6 +23,3 @@
     </a>
 </body>
 </html>
-
-git config --global user.email "maitenatveliz@gmail.com"
-git config --global user.name "Maii"
