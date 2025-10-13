@@ -1,0 +1,65 @@
+/* Estilos generales para toda la página */
+body {
+    background-color: #fef1d0; /* color crema claro */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* pantalla completa */
+    margin: 0;
+}
+
+/* Contenedor principal que agrupa el logo y el login */
+.container {
+    text-align: center;
+}
+
+/* Logo de la parte superior */
+.logo {
+    width: 170px;
+    margin-bottom: -30px;
+}
+
+/* Caja del formulario */
+.login-box {
+    background-color: #801a1a; /* marrón oscuro */
+    padding: 160px 150px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Etiqueta de texto (Usuario:) */
+.login-box label {
+    display: block;
+    color: #fef1d0;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Campo de entrada */
+.login-box input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Botón de "Entrar" */
+.login-box button {
+    background-color: #fef1d0;
+    color: #801a1a;
+    border: none;
+    padding: 10px 60px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efecto hover */
+.login-box button:hover {
+    background-color: #e5d3a0;
+}

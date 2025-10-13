@@ -1,0 +1,42 @@
+*{
+
+}
+body{
+    background-color: rgba(246, 235, 206, 1);
+}
+
+.logo{
+    margin-top: -110px;
+    padding-left: 30px;
+}
+
+.buscador{
+    background: white;
+    margin-left: 300px;
+    margin-right: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    /*position: absolute;*/
+    border-radius: 13px;
+    margin-top: 70px;
+    box-shadow: 10px 10px 15px rgba(130, 30, 30, 1);
+
+}
+
+.reseña{
+    background: rgba(147, 57, 57, 1);
+    padding-left: 200px;
+    padding-bottom: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding-top: 15px;
+    margin-top: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.imglibro{
+    margin-left: -190px;
+    margin-top: -40px;
+}

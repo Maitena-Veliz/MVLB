@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Libro</title>
+    <link rel="stylesheet" href="../static/css/style_verlibro.css">
+    <link rel="shortcut icon" href="../static/imgenes/logo.png">
+</head>
+<body>
+    <h3 class="buscador">Buscar libro</h3>
+    <div>
+        <img class="logo" src="{{ url_for('static', filename='/img/logo.png') }}" width="250" height="220">
+        <img src="{{ url_for('static', filename='/img/lupa.png') }}">
+    </div>
+
+    <div>
+        <div class="reseña">
+            <h3>Usuario</h3>
+            <p>Reseña super larga</p>
+            <h2 class="imglibro">Imagen del libro</h2>
+        </div>
+
+        <div class="reseña">
+            <h3>Usuario</h3>
+            <p>Reseña super larga</p>
+            <h2 class="imglibro">Imagen del libro</h2>
+        </div>
+
+        <div class="reseña">
+            <h3>Usuario</h3>
+            <p>Reseña super larga</p>
+            <h2 class="imglibro">Imagen del libro</h2>
+        </div>
+    </div>
+</body>
+</html>

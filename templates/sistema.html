@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" href="../static/css/estilo_sistema.css">
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='/img/g5.png') }}" class="logo" >
+
+        <div class="login-box">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario">
+            <button>Entrar</button>
+        </div>
+    </div>
+</body>
+</html>

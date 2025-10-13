@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgba(246, 235, 206, 1);
+}
+
+.logo{
+    padding-left: 30px;
+}
+
+.busqueda{
+    background-color: white;
+    font: normal 1.2em;
+    padding-left: 50px;
+    padding-right: 1210px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 65px;
+    border-radius: 13px;
+}
+
+.lupa{
+    margin-left: 370px;
+    margin-top: 73px;
+    position: absolute;
+    z-index: 10;
+}
+
+.img_libro {
+    margin-left: 260px;
+    margin-top: 20px;
+}
+
+
+.reseña {
+    background-color: rgba(147, 57, 57, 1);
+    width: 60%;
+    padding-right: 70px;
+    padding-left: 350px;
+    padding-top: 8px;
+    padding-bottom: 150px;
+
+    margin-left: 200px;
+    color: white;
+}
+
+.usuario {
+    background-color: rgba(147, 57, 57, 1);
+    width: 60%;
+    padding-right: 70px;
+    padding-left: 350px;
+    padding-top: 60px;
+
+    margin-left: 200px;
+    margin-top: -280px;
+    color: white;
+    font-size: 1.5em;
+
+}
+
+.libro1 {
+    margin-bottom: 50px;
+}
+
+.libro2 {
+    margin-bottom: 50px;
+}
+
+.libro3 {
+    margin-bottom: 100px;
+}
