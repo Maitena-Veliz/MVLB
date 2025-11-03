@@ -4,7 +4,7 @@ import mysql.connector
 # Conexión a la base de datos
 conexion = mysql.connector.connect(
 host="localhost",
-user="root",
+user="usuario",
 password="root",
 database="mvlb"
 )
@@ -26,7 +26,10 @@ def sistema2():
 
 @app.route('/verlibro')
 def verlibro():
-    return render_template('VerLibro.html')
+    query = "SELECT * FROM libro"
+    cursor.execute(query)
+    libros = cursor.fetchall()
+    return render_template('VerLibro.html',libros=libros)
 
 @app.route('/verpersonas')
 def verpersonas():
