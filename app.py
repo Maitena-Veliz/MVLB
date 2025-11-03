@@ -1,5 +1,15 @@
 from flask import Flask, render_template
 
+import mysql.connector
+# Conexión a la base de datos
+conexion = mysql.connector.connect(
+host="localhost",
+user="usuario",
+password="contraseña",
+database="mvlb"
+)
+cursor = conexion.cursor()
+
 app = Flask(__name__)
 
 @app.route('/')
