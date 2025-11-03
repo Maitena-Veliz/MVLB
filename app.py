@@ -4,8 +4,8 @@ import mysql.connector
 # Conexión a la base de datos
 conexion = mysql.connector.connect(
 host="localhost",
-user="usuario",
-password="contraseña",
+user="root",
+password="root",
 database="mvlb"
 )
 cursor = conexion.cursor()
