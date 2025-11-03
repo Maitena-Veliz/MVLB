@@ -22,7 +22,10 @@ def sistema():
 
 @app.route('/sistema2')
 def sistema2():
-    return render_template('sistema2.html')
+    query = "SELECT * FROM review"
+    cursor.execute(query)
+    reviews = cursor.fetchall()
+    return render_template('sistema2.html', reviews=reviews)
 
 @app.route('/verlibro')
 def verlibro():
@@ -33,7 +36,10 @@ def verlibro():
 
 @app.route('/verpersonas')
 def verpersonas():
-    return render_template('verPersonas.html')
+    query = "SELECT * FROM usuario"
+    cursor.execute(query)
+    usuarios = cursor.fetchall()
+    return render_template('verPersonas.html', usuarios=usuarios)
 
 if __name__ == '__main__':
     app.run(debug=True)
