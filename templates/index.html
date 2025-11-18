@@ -12,13 +12,13 @@
     <div>
         <img class="acomodalogo" src="{{ url_for('static', filename='/img/logo.png') }}" alt="Logo crack">
     </div>
-    <a href="http://127.0.0.1:5000/verpersonas">
+    <a href="{{ url_for('verpersonas')}}">
         <img class="personas" src="{{ url_for('static', filename='/img/ver personas.png') }}" width="420">
     </a>
-    <a href="http://127.0.0.1:5000/verlibro">
+    <a href="{{ url_for('verlibro')}}">
         <img class="libros" src="{{ url_for('static', filename='/img/ver libro.png') }}" width="420">
     </a>
-    <a href="http://127.0.0.1:5000/sistema">
+    <a href="{{ url_for('sistema')}}">
         <img class="entrarsistema" src="{{ url_for('static', filename='/img/entrar en sistema.png') }}" width="420">
     </a>
 </body>

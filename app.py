@@ -4,7 +4,7 @@ import mysql.connector
 # Conexión a la base de datos
 conexion = mysql.connector.connect(
 host="localhost",
-user="usuario",
+user="root",
 password="root",
 database="mvlb"
 )
@@ -27,6 +27,14 @@ def sistema2():
     reviews = cursor.fetchall()
     return render_template('sistema2.html', reviews=reviews)
 
+@app.route('/hacerreview')
+def hacerreview():
+    return render_template('hacerreview.html')
+
+@app.route('/eliminarreview')
+def review():
+    return render_template('eliminarreview.html')
+
 @app.route('/verlibro')
 def verlibro():
     query = "SELECT * FROM libro"
@@ -34,9 +42,10 @@ def verlibro():
     libros = cursor.fetchall()
     return render_template('VerLibro.html',libros=libros)
 
-@app.route('/verpersonas')
+@app.route('/verpersonas', methods=['POST'])
 def verpersonas():
-    query = "SELECT * FROM usuario"
+    nombre_persona = request.form.get('persona')
+    query = "SELECT * FROM usuario WHERE usuario.user_name"
     cursor.execute(query)
     usuarios = cursor.fetchall()
     return render_template('verPersonas.html', usuarios=usuarios)

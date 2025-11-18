@@ -12,7 +12,14 @@
 <header>
     
     <div>
-        <p class="busqueda">Buscar persona</p>
+        <h1>Buscar personas</h1>
+        <form action="{{ url_for('/verpersonas')}}" method="POST">
+            <label for="persona">Persona:</label>
+            <input type="text" id="persona" name="persona" required>
+            <br>
+            <input type="submit" value="buscar">
+        </form>
+
         <img class="lupa" src="{{ url_for('static', filename='/img/Lupa.png') }}" width="15" height="15">
         
     </div>
@@ -23,7 +30,7 @@
 <body>
     <div class="libro1">
         <img class="img_libro" src="{{ url_for('static', filename='/img/boulevard.jpg') }}" width="165" height="250">
-        <h3 class="usuario">superpapupro_2003</h3>
+        <h3 class="usuario">{{titulo}}</h3>
         <p class="reseña">Sinceramente ha sido una decepción, no sé si es que lo leí en base a tan buenas recomendaciones, pero no he visto los motivos que hacen que esté tan bien valorado. En primer lugar Halsey no evoluciona nada de nada, es un personaje simple y fácil.Luke otro tanto, no me creo la rapidez de sus sentimientos. Diálogos simples y forzados, con situaciones que se han visto ya en multitud de historias. Predecible. Lo único diferente a otros libros que he leído es el final, que es triste y un golpe de realidad. Pero es suficiente para ensalzar la historia? No. al menos en mi caso.</p>
         
     </div>
